@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh("./scripts/fibonacci.sh ${env.NUMBER}")
+                sh("./Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
